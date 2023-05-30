@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body {
+    /* margin: 0;
+    padding: 0; */
+    background-color: grey;
+    min-height: 100vh;
+    font-family: 'Crimson';
+    font: size 15px;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+    float: center;
+}
+
+header, header a{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    display: grid;
+    display: flex;
+    gap: 5%;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.grid-rows{
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    display: grid;
+    /* grid-auto-flow: rows; */
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 2em;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    display: flex;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: larger;
+    text-shadow: 2px 1px rgb(94, 94, 94);
+}
+  
+.solutions, .desertification, .melting-permafrost, .whos-affected, .general {
+    background-color: rgb(40, 40, 40);
+    color: rgb(203, 224, 242);
+    text-align: left;
+    float: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.wrapper {
+    height: relative;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 5%;
+    object-fit: cover;
+    padding:10px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+.description {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 175px;
+    width: 93%;
+    bottom: -30px;
+    left: 0; 
+    right: -20px;
+    text-align: center; 
+    padding-top: 1px;
+    padding-left: 16px;
+    transform: translateY(400px);
+    transition: transform 0.5s cubic-bezier(0.8, -0.7, 0.26, 1.8);
+    overflow:hidden;
+  } 
+  
+  .wrapper:hover .description {
+    transform: translateY(0);
+  } 
+
+
+ /* img{
+    max-width: 25%;
+    max-height: 25%;
+    float: left;
+    margin: 5%;
+} */
+
+.left{
+    display: flex;
+    float: left;
+    padding: 2em;
+}
+
+.right{
+    padding: 2em;
+}
+
+
+.hero-container{
+    background-color: transparent;
+} 
+
+.hero-image{
+    max-width:95%;
+    max-height: 50%;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-26px, 23px);
+}
+
+h1{
+    text-align:center;
+    background-color: grey;
+    color: black;
+    max-width: 100%;
+    padding: 2em;
+    border-color: white;
+}
+
+.footer, footer a{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
